@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+<style>
+  /* CSS for styling */
+  .resume-section {
+    margin-bottom: 20px;
+  }
+  h2 {
+    color:orangered;
+  }
+  p {
+    font-size: 16px;
+  }
+  .photo {
+    max-width: 200px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 20px;
+  }
+  .name {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+<body>
+<div id="resume">
+  <div class="resume-section" id="personal-info">
+    <div>
+      <h1 class="name" id="name">VINAY VEERAPANENI</h1>
+      <p>Email: vinayveerapaneni068@gmail.com</p>
+      <p>Phone: 8555048907</p>
+    </div>
+    <img class="photo" src="./DSC_8691.JPG" alt="Profile Photo">
+  </div>
+  <div class="resume-section">
+    <h2>OBJECTIVE</h2>
+    <ul>
+      <li>Company ABC - Frontend Developer (2018 - Present)</li>
+      <li>Company XYZ - Intern (2016 - 2018)</li>
+    </ul>
+  </div>
+  <div class="resume-section">
+    <h2>Education</h2>
+    <ul>
+      <li>MCA-Acharya Nagarjuna University,Guntur-2020</li>
+      <li>BSC(MSCS)-NTR memorial Degree college,Addanki-2018</li>
+    </ul>
+  </div>
+  <div class="resume-section">
+    <h2>Projects</h2>
+    <ul id="projects-list">
+      <li class="project-item">PROGRESSMATE TO0L-Used for tracking the progess of the other projects</li>
+      <li class="project-item">QR-C0DE GENERATOR</li>
+      <li class="project-item">TIC-TOE-GAME</li>
+    </ul>
+  </div>
+  <div class="resume-section">
+    <h2>Tech-Stack</h2>
+    <ul><li>PYTHON</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>BOOTSTRAP</li>
+        <li>REACT-JS</li>
+    </ul>
+  </div>
+  <div class="resume-section">
+    <h2>Hobbies</h2>
+    <p>watching cricket,scrolling reels</p>
+  </div>
+  
+</div>
+
+<script>
+  const personalInfo1 = document.getElementById('resume');
+  const personalInfo2 = document.getElementsByTagName('h2');
+  const personalInfo = document.getElementById('personal-info');
+  const nameElement = document.getElementById('name');
+  const sections = document.getElementsByTagName('div');
+  const photo = personalInfo.getElementsByClassName('photo')[0];
+  const projectsList = document.getElementById('projects-list');
+  nameElement.innerHTML = 'VINAY VEERAPANENI'; 
+  personalInfo1.style.color="white"
+  personalInfo1.style.background="blue"
+  personalInfo2.style.color="yellow"
+
+  photoElement.src="";
+  projectsList.innerHTML += '<li class="project-item">Project D - Description of Project D</li>'; 
+</script>
+
+</body>
+</html>
